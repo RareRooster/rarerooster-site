@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Ambient Cosmic Glow (vector halo) -->
+  <polygon
+    points="50.0,2.0 60.8,35.2 95.7,35.2 67.4,55.7 78.2,88.8 50.0,68.3 21.8,88.8 32.6,55.7 4.3,35.2 39.2,35.2"
+    fill="#3E7BFA"
+    fill-opacity="0.28"
+  />
+
+  <!-- Faceted 5-pointed Cosmic Star -->
+  <!-- Classical Golden Ratio: Outer radius: 46.0, Inner radius: 17.57, Center: 50, 50 -->
+  <g>
+    <!-- Top point left facet -->
+    <polygon points="50.0,4.0 50.0,50.0 39.7,35.8" fill="#D2E4FF" />
+    <!-- Top point right facet -->
+    <polygon points="50.0,4.0 60.3,35.8 50.0,50.0" fill="#FFFFFF" />
+
+    <!-- Top-right point top facet -->
+    <polygon points="93.8,35.8 50.0,50.0 60.3,35.8" fill="#FFE59E" />
+    <!-- Top-right point bottom facet -->
+    <polygon points="93.8,35.8 66.7,55.4 50.0,50.0" fill="#F5C042" />
+
+    <!-- Bottom-right point right facet -->
+    <polygon points="77.0,87.2 50.0,50.0 66.7,55.4" fill="#E8A238" />
+    <!-- Bottom-right point left facet -->
+    <polygon points="77.0,87.2 50.0,67.6 50.0,50.0" fill="#CC8520" />
+
+    <!-- Bottom-left point right facet -->
+    <polygon points="23.0,87.2 50.0,50.0 50.0,67.6" fill="#2D5EC2" />
+    <!-- Bottom-left point left facet -->
+    <polygon points="23.0,87.2 33.3,55.4 50.0,50.0" fill="#3D75E8" />
+
+    <!-- Top-left point bottom facet -->
+    <polygon points="6.2,35.8 50.0,50.0 33.3,55.4" fill="#4B84F5" />
+    <!-- Top-left point top facet -->
+    <polygon points="6.2,35.8 39.7,35.8 50.0,50.0" fill="#88B4FF" />
+
+    <!-- Crisp outer star outline -->
+    <polygon
+      points="50.0,4.0 60.3,35.8 93.8,35.8 66.7,55.4 77.0,87.2 50.0,67.6 23.0,87.2 33.3,55.4 6.2,35.8 39.7,35.8"
+      fill="none"
+      stroke="#EAEFF8"
+      stroke-width="1.2"
+      stroke-linejoin="miter"
+    />
+  </g>
+</svg>
+

@@ -127,12 +127,16 @@ main {
 }
 
 .game-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
   text-align: left;
+  cursor: pointer;
 }
 
 .game-card:hover {
@@ -145,6 +149,11 @@ main {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.game-card:hover h3 {
+  color: #fff;
 }
 
 .game-card p {
@@ -152,7 +161,8 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.game-card a {
+.game-card a,
+.game-card .game-card-action {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
@@ -162,7 +172,8 @@ main {
   transition: color 0.3s ease;
 }
 
-.game-card a:hover {
+.game-card:hover a,
+.game-card:hover .game-card-action {
   color: var(--accent-hover);
 }
 

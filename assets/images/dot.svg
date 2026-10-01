@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer Cosmic Glow Ring -->
+  <circle cx="50" cy="50" r="32" fill="#3E7BFA" fill-opacity="0.18" />
+  
+  <!-- Outer Accent Border -->
+  <circle cx="50" cy="50" r="22" fill="#141E34" stroke="#4D7CD8" stroke-width="2" stroke-opacity="0.75" />
+  
+  <!-- Middle Luminous Ring -->
+  <circle cx="50" cy="50" r="14" fill="#688ECE" fill-opacity="0.6" />
+  
+  <!-- Inner Starlight Core -->
+  <circle cx="50" cy="50" r="8" fill="#EAEFF8" />
+</svg>

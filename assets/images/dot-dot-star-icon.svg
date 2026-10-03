@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <defs>
-    <!-- Left Facet Gradients: Crystalline Sapphire / Stellar Blue -->
-    <linearGradient id="facet-l1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="facet-l1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#E6F2FF" />
       <stop offset="100%" stop-color="#AFCDFF" />
     </linearGradient>
@@ -21,8 +20,6 @@
       <stop offset="0%" stop-color="#3769D7" />
       <stop offset="100%" stop-color="#1E4BAF" />
     </linearGradient>
-
-    <!-- Right Facet Gradients: Warm Starlight Gold / Amber -->
     <linearGradient id="facet-r1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="100%" stop-color="#F5F0E6" />
@@ -43,9 +40,30 @@
       <stop offset="0%" stop-color="#D78C1E" />
       <stop offset="100%" stop-color="#B96E14" />
     </linearGradient>
-  </defs>
 
-  <g id="star">
+  </defs>
+  <!-- Bezel Ring (Safe zone radius 310, Vivid Starlight Blue #5D8BF0) -->
+  <circle cx="512" cy="512" r="310" fill="none" stroke="#5D8BF0" stroke-width="2.5" />
+  
+  <!-- Subtle North & South Anchor Ticks -->
+  <line x1="512" y1="184" x2="512" y2="210" stroke="#DAEAFF" stroke-width="6" stroke-linecap="square" />
+  <line x1="512" y1="814" x2="512" y2="840" stroke="#D4AF37" stroke-width="6" stroke-linecap="square" />
+
+  <!-- Symmetrical Equator Dot Tokens (dot dot) -->
+      <circle cx="202.0" cy="512.0" r="20.0" fill="#3E7BFA" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="202.0" cy="512.0" r="13.75" fill="#141E34" stroke="#4D7CD8" stroke-width="1.25" />
+    <circle cx="202.0" cy="512.0" r="8.75" fill="#688ECE" />
+    <circle cx="202.0" cy="512.0" r="5.0" fill="#FFFFFF" />
+
+      <circle cx="822.0" cy="512.0" r="20.0" fill="#D4AF37" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="822.0" cy="512.0" r="13.75" fill="#241B0E" stroke="#E5C158" stroke-width="1.25" />
+    <circle cx="822.0" cy="512.0" r="8.75" fill="#F8D05F" />
+    <circle cx="822.0" cy="512.0" r="5.0" fill="#FFFFFF" />
+
+
+  <!-- The Focal Point Star (610x610 centered at 512, 512) -->
+  <g transform="translate(207, 207) scale(6.1)">
+      <g id="star">
     <!-- Left Crystalline Sapphire Facets -->
     <polygon points="50.0,4.0 50.0,50.0 39.7,35.8" fill="url(#facet-l1)" />
     <polygon points="6.2,35.8 39.7,35.8 50.0,50.0" fill="url(#facet-l2)" />
@@ -69,5 +87,7 @@
     <!-- Specular Core & Micro Glint Crosshair -->
     <circle cx="50.0" cy="50.0" r="1.5" fill="#FFFFFF" />
     <path d="M 43.75,50.0 L 56.25,50.0 M 50.0,43.75 L 50.0,56.25" stroke="#FFFFFF" stroke-width="0.55" stroke-linecap="round" />
+  </g>
+
   </g>
 </svg>

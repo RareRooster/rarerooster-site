@@ -6,7 +6,11 @@
   <title>Dot Dot Star - Rare Rooster</title>
   <meta name="description" content="Dot Dot Star is a deep-space astrological logic puzzle game by Rare Rooster, inspired by Queens puzzle logic with procedural infinite galaxies.">
   <link rel="stylesheet" href="../assets/css/dot-dot-star.css">
-  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/dot-dot-star-icon.svg">
+  <link rel="alternate icon" type="image/png" href="../assets/images/dot-dot-star-icon.png">
+  <meta property="og:title" content="Dot Dot Star - Rare Rooster">
+  <meta property="og:description" content="A deep-space astrological logic puzzle inspired by the classic Queens constraint problem. Deduce and ignite stars across infinite procedural galaxies.">
+  <meta property="og:image" content="../assets/images/dot-dot-star-icon.png">
 </head>
 <body class="theme-void-pulse">
   <header>
@@ -24,7 +28,7 @@
     <!-- Hero Section -->
     <section class="dds-hero">
       <div class="dds-icon-wrapper">
-        <img src="../assets/images/dot-dot-star-icon.png" alt="Dot Dot Star App Icon" class="dds-app-icon">
+        <img src="../assets/images/dot-dot-star-icon.svg" alt="Dot Dot Star Logo" class="dds-app-icon">
       </div>
 
       <div class="dds-wordmark">
@@ -43,7 +47,7 @@
       <p class="dds-tagline"><em>&ldquo;Stars don&rsquo;t announce themselves. They simply appear.&rdquo;</em></p>
 
       <p class="dds-description">
-        A deep-space astrological logic puzzle inspired by the classic &ldquo;Queens&rdquo; constraint problem. 
+        A deep-space astrological logic puzzle inspired by the classic &ldquo;Queens&rdquo; constraint problem.
         Every galaxy is procedurally generated to guarantee a singular, elegant solution.
       </p>
 
@@ -91,28 +95,28 @@
         <!-- 4x4 Solved Board Sample -->
         <div class="dds-grid-4x4">
           <!-- Row 0: regions [0,0,0,1] -> Navy, Navy, Navy, Violet -->
-          <div class="dds-cell r-navy"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-navy"><div class="dds-cell-icon"><img src="../assets/images/star.svg" alt="Star"></div></div>
-          <div class="dds-cell r-navy"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-violet"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-navy"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-navy"><div class="dds-cell-icon dds-cell-star"><img src="../assets/images/star.svg" alt="Star"></div></div>
+          <div class="dds-cell r-navy"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-violet"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
 
           <!-- Row 1: regions [2,0,1,1] -> Teal, Navy, Violet, Violet -->
-          <div class="dds-cell r-teal"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-navy"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-violet"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-violet"><div class="dds-cell-icon"><img src="../assets/images/star.svg" alt="Star"></div></div>
+          <div class="dds-cell r-teal"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-navy"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-violet"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-violet"><div class="dds-cell-icon dds-cell-star"><img src="../assets/images/star.svg" alt="Star"></div></div>
 
           <!-- Row 2: regions [2,3,3,1] -> Teal, Crimson, Crimson, Violet -->
-          <div class="dds-cell r-teal"><div class="dds-cell-icon"><img src="../assets/images/star.svg" alt="Star"></div></div>
-          <div class="dds-cell r-crimson"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-crimson"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-violet"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-teal"><div class="dds-cell-icon dds-cell-star"><img src="../assets/images/star.svg" alt="Star"></div></div>
+          <div class="dds-cell r-crimson"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-crimson"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-violet"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
 
           <!-- Row 3: regions [2,2,3,3] -> Teal, Teal, Crimson, Crimson -->
-          <div class="dds-cell r-teal"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-teal"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
-          <div class="dds-cell r-crimson"><div class="dds-cell-icon"><img src="../assets/images/star.svg" alt="Star"></div></div>
-          <div class="dds-cell r-crimson"><div class="dds-cell-icon"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-teal"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-teal"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
+          <div class="dds-cell r-crimson"><div class="dds-cell-icon dds-cell-star"><img src="../assets/images/star.svg" alt="Star"></div></div>
+          <div class="dds-cell r-crimson"><div class="dds-cell-icon dds-cell-dot"><img src="../assets/images/dot.svg" alt="Dot"></div></div>
         </div>
 
         <div class="dds-board-rules">

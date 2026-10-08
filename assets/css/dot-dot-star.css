@@ -168,60 +168,81 @@ body.theme-void-pulse {
   align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 0.35rem;
+  column-gap: 0.45rem;
   row-gap: 0.1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.1rem;
   margin-top: -3rem;
 }
 
 .dds-wordmark .word-dot {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 2.15rem;
   color: var(--dds-on-bg-muted);
+  line-height: 1;
 }
 
 .dds-wordmark .word-sep {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  font-size: 2.2rem;
-  color: var(--dds-accent-violet);
-  margin: 0 0.15rem;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--dds-accent-violet);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform: translateY(-8px);
+  margin: 0 0.12rem;
 }
 
 .dds-wordmark .word-star {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 3.4rem;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #ffffff 0%, var(--dds-accent-stellar) 60%, var(--dds-accent-mint) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.01em;
+  color: #628fe6;
+  background: none;
+  -webkit-text-fill-color: #628fe6;
   display: inline-block;
   margin-left: 0.2rem;
+  line-height: 1;
+}
+
+.dds-wordmark .word-star-icon {
+  height: 0.94em;
+  width: 0.94em;
+  vertical-align: -0.08em;
+  margin: 0 -0.06em 0 -0.20em;
+  filter: none;
+  transition: transform 0.25s ease;
+}
+
+.dds-wordmark .word-star-icon:hover {
+  transform: scale(1.08);
 }
 
 .dds-wordmark .word-bang {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 3.4rem;
-  color: var(--dds-accent-amber);
-  text-shadow: 0 0 20px rgba(255, 209, 102, 0.45);
+  color: #e5bc5d;
+  -webkit-text-fill-color: #e5bc5d;
+  text-shadow: none;
+  line-height: 1;
+  margin-left: 0.08em;
 }
 
 .dds-subtitle-badge {
   display: inline-block;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 5px;
-  color: var(--dds-accent-stellar);
-  background: rgba(108, 159, 255, 0.08);
-  border: 1px solid rgba(108, 159, 255, 0.25);
-  padding: 0.35rem 1.25rem 0.35rem 1.45rem;
-  border-radius: 999px;
-  margin-bottom: 1.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  color: var(--dds-on-bg-muted);
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 2rem;
   text-transform: uppercase;
+  padding-left: 0.42em;
 }
 
 .dds-tagline {
@@ -707,7 +728,9 @@ body.theme-void-pulse {
   }
 
   .dds-wordmark .word-sep {
-    font-size: 1.6rem;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-6px);
   }
 
   .dds-wordmark .word-star {
@@ -716,6 +739,12 @@ body.theme-void-pulse {
 
   .dds-wordmark .word-bang {
     font-size: 2.5rem;
+  }
+
+  .dds-subtitle-badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.35em;
+    padding-left: 0.35em;
   }
 
   .dds-grid-4x4 {

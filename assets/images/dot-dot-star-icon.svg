@@ -43,8 +43,8 @@
 
   </defs>
   <!-- Bezel Ring (Safe zone radius 310, Vivid Starlight Blue #5D8BF0) -->
-  <circle cx="512" cy="512" r="310" fill="none" stroke="#5D8BF0" stroke-width="2.5" />
-  
+  <circle cx="512" cy="512" r="310" fill="none" stroke="#5D8BF0" stroke-width="5" />
+
   <!-- Subtle North & South Anchor Ticks -->
   <line x1="512" y1="184" x2="512" y2="210" stroke="#DAEAFF" stroke-width="6" stroke-linecap="square" />
   <line x1="512" y1="814" x2="512" y2="840" stroke="#D4AF37" stroke-width="6" stroke-linecap="square" />
